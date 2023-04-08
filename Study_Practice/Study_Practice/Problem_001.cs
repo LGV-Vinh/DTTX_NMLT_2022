@@ -1,10 +1,10 @@
 ﻿using System;
 namespace Study_Practice
 {
-	public class Problem_001:Problem_000
-	{
-		public Problem_001()
-		{
+    public class Problem_001 : Problem_000
+    {
+        public Problem_001()
+        {
         }
         public override void Solution()
         {
@@ -23,6 +23,6 @@ namespace Study_Practice
             }
             Console.WriteLine($"S({n}) = " + S);
         }
-	}
+    }
 }
 

@@ -1,11 +1,11 @@
 ﻿using System;
 namespace Study_Practice
 {
-	public class Problem_002:Problem_000
-	{
-		public Problem_002()
-		{
-		}
+    public class Problem_002 : Problem_000
+    {
+        public Problem_002()
+        {
+        }
         public override void Solution()
         {
             // Bài 2: Tính S(n) = 1^2 + 2^2 + … + n^2
