@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nsbs/Projects/DTTX_NMLT_2022/ConsoleApp/ConsoleApp/ConsoleApp.csproj": {}
+    "/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/Study_Practice.csproj": {}
   },
   "projects": {
-    "/Users/nsbs/Projects/DTTX_NMLT_2022/ConsoleApp/ConsoleApp/ConsoleApp.csproj": {
+    "/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/Study_Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nsbs/Projects/DTTX_NMLT_2022/ConsoleApp/ConsoleApp/ConsoleApp.csproj",
-        "projectName": "ConsoleApp",
-        "projectPath": "/Users/nsbs/Projects/DTTX_NMLT_2022/ConsoleApp/ConsoleApp/ConsoleApp.csproj",
+        "projectUniqueName": "/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/Study_Practice.csproj",
+        "projectName": "Study_Practice",
+        "projectPath": "/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/Study_Practice.csproj",
         "packagesPath": "/Users/nsbs/.nuget/packages/",
-        "outputPath": "/Users/nsbs/Projects/DTTX_NMLT_2022/ConsoleApp/ConsoleApp/obj/",
+        "outputPath": "/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nsbs/.nuget/NuGet/NuGet.Config"
