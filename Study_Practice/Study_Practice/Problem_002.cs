@@ -1,14 +1,14 @@
 ﻿using System;
 namespace Study_Practice
 {
-	public class Problem_001:Problem_000
+	public class Problem_002:Problem_000
 	{
-		public Problem_001()
+		public Problem_002()
 		{
-        }
+		}
         public override void Solution()
         {
-            // Bài 1: Tính S(n) = 1 + 2 + 3 + … + n
+            // Bài 2: Tính S(n) = 1^2 + 2^2 + … + n^2
             // Tao input
             Console.WriteLine("Nhap so n:");
             int n = int.Parse(Console.ReadLine());
@@ -19,10 +19,10 @@ namespace Study_Practice
             // Loop
             for (int i = 1; i <= n; i++)
             {
-                S += i;
+                S += (i * i);
             }
-            Console.WriteLine($"S({n}) = " + S);
+            Console.WriteLine($"Tong cua S({n}) = " + S);
         }
-	}
+    }
 }
 
