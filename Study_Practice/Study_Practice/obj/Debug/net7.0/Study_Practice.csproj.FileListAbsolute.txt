@@ -1,0 +1,15 @@
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/bin/Debug/net7.0/Study_Practice
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/bin/Debug/net7.0/Study_Practice.deps.json
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/bin/Debug/net7.0/Study_Practice.runtimeconfig.json
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/bin/Debug/net7.0/Study_Practice.dll
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/bin/Debug/net7.0/Study_Practice.pdb
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/Debug/net7.0/Study_Practice.csproj.AssemblyReference.cache
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/Debug/net7.0/Study_Practice.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/Debug/net7.0/Study_Practice.AssemblyInfoInputs.cache
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/Debug/net7.0/Study_Practice.AssemblyInfo.cs
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/Debug/net7.0/Study_Practice.csproj.CoreCompileInputs.cache
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/Debug/net7.0/Study_Practice.dll
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/Debug/net7.0/refint/Study_Practice.dll
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/Debug/net7.0/Study_Practice.pdb
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/Debug/net7.0/Study_Practice.genruntimeconfig.cache
+/Users/nsbs/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/Debug/net7.0/ref/Study_Practice.dll
