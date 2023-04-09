@@ -7,10 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Problem Pack 001-050\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Problem Pack 001-050\" />
-  </ItemGroup>
 </Project>
