@@ -1,18 +1,24 @@
 ﻿<Properties StartupConfiguration="{856ABEA6-FF48-4B79-B2AC-015B6494D48E}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Study__Practice PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Study_Practice/Main.cs">
     <Files>
-      <File FileName="Study_Practice/Problem_001.cs" Line="10" Column="6" />
-      <File FileName="Study_Practice/Problem_000.cs" Line="5" Column="3" />
-      <File FileName="Study_Practice/Problem_001.cs" Line="28" Column="1" />
-      <File FileName="Study_Practice/Problem_002.cs" Line="10" Column="10" />
+      <File FileName="Study_Practice/Problem_000.cs" Line="13" Column="2" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_002.cs" Line="27" Column="2" />
+      <File FileName="Study_Practice/Main.cs" Line="3" Column="26" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_001.cs" Line="27" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Study_Practice" expanded="True">
             <Node name="Study_Practice" expanded="True">
-              <Node name="Problem Pack 001-050" expanded="True" />
+              <Node name="Problem Pack 01 (001-050)" expanded="True" />
               <Node name="Main.cs" selected="True" />
             </Node>
           </Node>
@@ -20,10 +26,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Study__Practice PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
