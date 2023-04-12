@@ -21,7 +21,7 @@ namespace Study_Practice
             {
                 S += (i * i);
             }
-            Console.WriteLine($"Tong cua S({n}) = " + S);
+            Console.WriteLine($"Bai 002: S({n}) = " + S);
         }
     }
 }

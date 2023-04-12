@@ -21,7 +21,7 @@ namespace Study_Practice
             {
                 S += i;
             }
-            Console.WriteLine($"S({n}) = " + S);
+            Console.WriteLine($"Bai 001: S({n}) = " + S);
         }
     }
 }

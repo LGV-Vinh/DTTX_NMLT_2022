@@ -22,7 +22,7 @@ namespace Study_Practice
                 double step = 1 / (double)i;
                 S += step;
             }
-            Console.WriteLine($"S({n}) = {S}.");
+            Console.WriteLine($"Bai 003: S({n}) = {S}.");
         }
     }
 }
