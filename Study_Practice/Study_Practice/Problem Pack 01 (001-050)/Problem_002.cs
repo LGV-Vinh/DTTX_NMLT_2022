@@ -10,7 +10,7 @@ namespace Study_Practice
         {
             // Bài 2: Tính S(n) = 1^2 + 2^2 + … + n^2
             // Tao input
-            Console.WriteLine("Nhap so n:");
+            Console.WriteLine("Nhap so nguyen n:");
             int n = int.Parse(Console.ReadLine());
 
             // Tao bien
@@ -21,7 +21,7 @@ namespace Study_Practice
             {
                 S += (i * i);
             }
-            Console.WriteLine($"Bai 002: S({n}) = " + S);
+            Console.WriteLine($"Bai 002: S({n}) = {S}.");
         }
     }
 }
