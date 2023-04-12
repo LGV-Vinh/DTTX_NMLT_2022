@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
 namespace Study_Practice
 {
     public class Problem_025 : Problem_000
