@@ -1,14 +1,14 @@
 ﻿using System;
 namespace Study_Practice
 {
-    public class Problem_012 : Problem_000
+    public class Problem_016 : Problem_000
     {
-        public Problem_012()
+        public Problem_016()
         {
         }
         public override void Solution()
         {
-            Console.WriteLine("Bài 12: Tính S(n) = x + x^2 + x^3 + … + x^n");
+            Console.WriteLine("Bài 16: Tính S(n) = x + x^2/1 + 2 + x^3/1 + 2 + 3 + … + x^n/1 + 2 + 3 + …. + N");
 
             // Tao input
             Console.WriteLine("Nhap so nguyen x:");
@@ -18,15 +18,16 @@ namespace Study_Practice
 
             // Tao bien
             double S = 0;
-            double step = 0;
+            int step = 0;
 
             // Loop
-            for (int i = 0; i <= n; i++)
+            for (int i = 1; i <= n; i++)
             {
-                step = Math.Pow(x, i);
-                S += step;
+                step += i;
+                S += Math.Pow(x, i) / step;
             }
-            Console.WriteLine($"Bai 012: Voi x = {x}, S({n}) = {S}.");
+            Console.WriteLine($"Bai 016: Voi x = {x}, S({n}) = {S}.");
         }
     }
 }
+
