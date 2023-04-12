@@ -8,7 +8,8 @@ namespace Study_Practice
         }
         public override void Solution()
         {
-            // Bài 8: Tính S(n) = ½ + ¾ + 5/6 + … + 2n + 1/ 2n + 2
+            Console.WriteLine("Bài 8: Tính S(n) = ½ + ¾ + 5/6 + … + 2n + 1/ 2n + 2");
+
             // Tao input
             Console.WriteLine("Nhap so nguyen n:");
             int n = int.Parse(Console.ReadLine());
@@ -26,4 +27,3 @@ namespace Study_Practice
         }
     }
 }
-

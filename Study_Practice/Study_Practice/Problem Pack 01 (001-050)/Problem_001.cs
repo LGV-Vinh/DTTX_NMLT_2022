@@ -8,7 +8,8 @@ namespace Study_Practice
         }
         public override void Solution()
         {
-            // Bài 1: Tính S(n) = 1 + 2 + 3 + … + n
+            Console.WriteLine("Bài 1: Tính S(n) = 1 + 2 + 3 + … + n");
+
             // Tao input
             Console.WriteLine("Nhap so nguyen n:");
             int n = int.Parse(Console.ReadLine());

@@ -8,7 +8,8 @@ namespace Study_Practice
         }
         public override void Solution()
         {
-            // Bài 6: Tính S(n) = 1/1×2 + 1/2×3 +…+ 1/n x (n + 1)
+            Console.WriteLine("Bài 6: Tính S(n) = 1/1×2 + 1/2×3 +…+ 1/n x (n + 1)");
+
             // Tao input
             Console.WriteLine("Nhap so nguyen n:");
             int n = int.Parse(Console.ReadLine());
@@ -26,4 +27,3 @@ namespace Study_Practice
         }
     }
 }
-

@@ -1,29 +1,30 @@
 ﻿using System;
 namespace Study_Practice
 {
-    public class Problem_004 : Problem_000
+    public class Problem_011 : Problem_000
     {
-        public Problem_004()
+        public Problem_011()
         {
         }
         public override void Solution()
         {
-            Console.WriteLine("Bài 4: Tính S(n) = ½ + ¼ + … + 1/2n");
+            Console.WriteLine("Bài 11: Tính S(n) = 1 + 1.2 + 1.2.3 + … + 1.2.3….N");
 
             // Tao input
             Console.WriteLine("Nhap so nguyen n:");
             int n = int.Parse(Console.ReadLine());
 
             // Tao bien
-            double S = 0;
+            int S = 0;
+            int step = 1;
 
             // Loop
             for (int i = 1; i <= n; i++)
             {
-                double step = 1 / (double)(2 * i);
+                step *= i;
                 S += step;
             }
-            Console.WriteLine($"Bai 004: S({n}) = {S}.");
+            Console.WriteLine($"Bai 011: S({n}) = {S}.");
         }
     }
 }
