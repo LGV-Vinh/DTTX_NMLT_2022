@@ -24,20 +24,22 @@ namespace Study_Practice
 
             if (sum == n)
             {
-                foreach (int uoc in uocSo) if (uoc < n)
+                Console.Write(1);
+                foreach (int uoc in uocSo) if (uoc < n && uoc > 1)
                     {
-                        Console.Write(uoc + " + ");
+                        Console.Write(" + " + uoc);
                     }
-                Console.WriteLine($"= {sum}");
+                Console.WriteLine($" = {sum}");
                 Console.WriteLine($"Bai 030: Tong cac uoc nguyen duong thuc su cua {n} = {sum}. Vay {n} la so hoan thien.");
             }
             else
             {
-                foreach(int uoc in uocSo) if (uoc < n)
-                {
-                    Console.Write(uoc + " + ");
-                }
-                Console.WriteLine($"= {sum}");
+                Console.Write(1);
+                foreach (int uoc in uocSo) if (uoc < n && uoc > 1)
+                    {
+                        Console.Write(" + " + uoc);
+                    }
+                Console.WriteLine($" = {sum}");
                 Console.WriteLine($"Bai 030: Tong cac uoc nguyen duong thuc su cua {n} != {sum}. Vay {n} khong phai la so hoan thien.");
             }
         }
