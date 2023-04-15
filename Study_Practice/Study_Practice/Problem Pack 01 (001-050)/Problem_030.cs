@@ -17,7 +17,29 @@ namespace Study_Practice
             int n = int.Parse(Console.ReadLine());
 
             // List uoc so
+            List<int> uocSo = Function.listUocSo(n);
 
+            // Kiem tra so hoan thien
+            int sum = uocSo.Sum() - n;
+
+            if (sum == n)
+            {
+                foreach (int uoc in uocSo) if (uoc < n)
+                    {
+                        Console.Write(uoc + " + ");
+                    }
+                Console.WriteLine($"= {sum}");
+                Console.WriteLine($"Bai 030: Tong cac uoc nguyen duong thuc su cua {n} = {sum}. Vay {n} la so hoan thien.");
+            }
+            else
+            {
+                foreach(int uoc in uocSo) if (uoc < n)
+                {
+                    Console.Write(uoc + " + ");
+                }
+                Console.WriteLine($"= {sum}");
+                Console.WriteLine($"Bai 030: Tong cac uoc nguyen duong thuc su cua {n} != {sum}. Vay {n} khong phai la so hoan thien.");
+            }
         }
     }
 }

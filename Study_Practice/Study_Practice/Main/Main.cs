@@ -3,9 +3,9 @@
 namespace Study_Practice;
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        Problem_000 Problem = new Problem_029();
+        Problem_000 Problem = new Problem_031();
         Problem.Solution();
     }
 }
