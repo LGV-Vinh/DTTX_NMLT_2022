@@ -27,6 +27,19 @@ namespace Study_Practice
             }
             return uocSo;
         }
+
+        public static List<long> listUocSoLong(long n) // Tra ve list uoc so cua so n duoc nhap
+        {
+            List<long> uocSo = new List<long>();
+            for (long i = 1; i <= n; i++)
+            {
+                if (n % i == 0)
+                {
+                    uocSo.Add(i);
+                }
+            }
+            return uocSo;
+        }
     }
 }
 

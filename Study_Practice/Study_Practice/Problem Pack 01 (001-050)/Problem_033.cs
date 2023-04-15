@@ -34,9 +34,7 @@ namespace Study_Practice
                     Console.WriteLine(S);
                     return 0;
                 }
-                n--;
-                //S = Math.Sqrt(2 + step);
-                return SqrtTimes(Math.Sqrt(2+S), n);
+                return SqrtTimes(Math.Sqrt(2 + S), n-1);
             }
             SqrtTimes(0, n);
         }
