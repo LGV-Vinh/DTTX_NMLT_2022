@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        Problem_000 Problem = new Problem_025();
+        Problem_000 Problem = new Problem_029();
         Problem.Solution();
     }
 }
