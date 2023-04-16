@@ -28,17 +28,18 @@ namespace Study_Practice
             return uocSo;
         }
 
-        public static List<long> listUocSoLong(long n) // Tra ve list uoc so cua so n duoc nhap
+        public static int int_in()
         {
-            List<long> uocSo = new List<long>();
-            for (long i = 1; i <= n; i++)
-            {
-                if (n % i == 0)
-                {
-                    uocSo.Add(i);
-                }
-            }
-            return uocSo;
+            Console.WriteLine("Nhap so n:");
+            int input = int.Parse(Console.ReadLine());
+            return input;
+        }
+
+        public static int int_in(string message)
+        {
+            Console.WriteLine(message);
+            int input = int.Parse(Console.ReadLine());
+            return input;
         }
     }
 }

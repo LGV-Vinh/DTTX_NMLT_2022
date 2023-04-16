@@ -8,8 +8,21 @@ namespace Study_Practice
         }
         public override void Solution()
         {
-            string A = "abc";
-            Console.WriteLine("{1} {0} {2}", A, 33, 44);
+            Console.WriteLine("Bài 34: Tính S(n) = CanBac2(n+CanBac2(n – 1 + CanBac2( n – 2 + … + CanBac2(2 + CanBac2(1)  có n dấu căn");
+
+            // Tao input
+            Console.WriteLine("Nhap so nguyen duong n:");
+            int n = int.Parse(Console.ReadLine());
+
+            // Tao bien
+            double S = 0;
+
+            for (int i = 1; i <= n; i++)
+            {
+                double temp = S;
+                S = Math.Sqrt(i - temp);
+            }
+            Console.WriteLine($"Bai 034: S({n}) = {S}.");
         }
     }
 }
