@@ -11,8 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 2: Tính S(n) = 1^2 + 2^2 + … + n^2");
 
             // Tao input
-            Console.WriteLine("Nhap so nguyen n:");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // Tao bien
             int S = 0;

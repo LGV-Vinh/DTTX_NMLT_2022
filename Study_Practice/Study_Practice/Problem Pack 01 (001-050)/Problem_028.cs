@@ -13,8 +13,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 28: Cho số nguyên dương n. Tính tổng các ước số nhỏ hơn chính nó");
 
             // Tao input
-            Console.WriteLine("Nhap so nguyen n:");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // List uoc so nho hon so n
             List<int> uocSo = new List<int>();

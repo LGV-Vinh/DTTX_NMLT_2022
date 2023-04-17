@@ -11,8 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 6: Tính S(n) = 1/1×2 + 1/2×3 +…+ 1/n x (n + 1)");
 
             // Tao input
-            Console.WriteLine("Nhap so nguyen n:");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // Tao bien
             double S = 0;

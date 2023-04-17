@@ -11,8 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 4: Tính S(n) = ½ + ¼ + … + 1/2n");
 
             // Tao input
-            Console.WriteLine("Nhap so nguyen n:");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // Tao bien
             double S = 0;

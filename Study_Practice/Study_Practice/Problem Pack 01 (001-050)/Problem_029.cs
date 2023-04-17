@@ -13,8 +13,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 29: Tìm ước số lẻ lớn nhất của số nguyên dương n. Ví dụ n = 100 ước lẻ lớn nhất là 25");
 
             // Tao input
-            Console.WriteLine("Nhap so nguyen n:");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // List uoc so
             List<int> uocSo = Function.listUocSo(n);

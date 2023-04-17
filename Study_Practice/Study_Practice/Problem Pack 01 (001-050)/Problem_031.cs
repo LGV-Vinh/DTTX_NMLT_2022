@@ -11,8 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 31: Cho số nguyên dương n. Kiểm tra xem n có phải là số nguyên tố hay không");
 
             // Tao input
-            Console.WriteLine("Nhap so nguyen duong n:");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // Kiem tra so nguyen to
             if (n <= 1)

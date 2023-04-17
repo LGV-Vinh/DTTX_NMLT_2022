@@ -13,8 +13,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 23: Đếm số lượng “ước số” của số nguyên dương n");
 
             // Tao input
-            Console.WriteLine("Nhap so nguyen n:");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // Tim list uoc so
             List<int> uocSo = Function.listUocSo(n);

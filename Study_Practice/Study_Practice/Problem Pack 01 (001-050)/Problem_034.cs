@@ -11,8 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 34: Tính S(n) = CanBac2(n+CanBac2(n – 1 + CanBac2( n – 2 + … + CanBac2(2 + CanBac2(1)  có n dấu căn");
 
             // Tao input
-            Console.WriteLine("Nhap so nguyen duong n:");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // Tao bien
             double S = 0;

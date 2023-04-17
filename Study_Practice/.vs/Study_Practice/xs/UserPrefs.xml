@@ -1,44 +1,25 @@
 ﻿<Properties StartupConfiguration="{856ABEA6-FF48-4B79-B2AC-015B6494D48E}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Study_Practice/Problem Pack 01 (001-050)/Problem_031.cs">
-    <Files>
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_021.cs" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_022.cs" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_020.cs" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_019.cs" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_023.cs" Line="1" Column="1" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_024.cs" Line="1" Column="1" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_025.cs" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_026.cs" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_027.cs" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_028.cs" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_003.cs" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_029.cs" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_030.cs" />
-      <File FileName="Study_Practice/Main/Main.cs" Line="8" Column="46" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_031.cs" Line="79" Column="18" />
-      <File FileName="Study_Practice/Main/Function.cs" Line="36" Column="32" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_032.cs" Line="1" Column="1" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_033.cs" Line="39" Column="29" />
-      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_034.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.ItemProperties.Study__Practice PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Study_Practice" expanded="True">
             <Node name="Study_Practice" expanded="True">
               <Node name="Main" expanded="True" />
-              <Node name="Problem Pack 01 (001-050)" expanded="True" />
+              <Node name="Problem Pack 01 (001-050)" expanded="True">
+                <Node name="Problem_041.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Study__Practice PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

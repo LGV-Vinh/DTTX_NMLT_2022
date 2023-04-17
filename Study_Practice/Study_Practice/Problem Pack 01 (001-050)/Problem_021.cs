@@ -13,8 +13,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 21: Tính tổng tất cả các “ ước số” của số nguyên dương n");
 
             // Tao input
-            Console.WriteLine("Nhap so nguyen n:");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // Tao list
             List<int> uocSo = new List<int>();

@@ -12,8 +12,7 @@ namespace Study_Practice
 
 
             // Tao input
-            Console.WriteLine("Nhap so n");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // Tao bien
             double S = 0;

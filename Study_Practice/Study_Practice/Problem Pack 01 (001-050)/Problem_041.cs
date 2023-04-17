@@ -1,26 +1,26 @@
 ﻿using System;
 namespace Study_Practice
 {
-    public class Problem_039 : Problem_000
+    public class Problem_041 : Problem_000
     {
-        public Problem_039()
+        public Problem_041()
         {
         }
         public override void Solution()
         {
-            Console.WriteLine("Bài 39: Tính S(n) = CanBac N + 1(N! + CanBacN((N – 1)! + … + CanBac3(2! + CanBac2(1!))) có n dấu căn");
+            Console.WriteLine("Bài 41: Tính S(n) = 1 / (1 + 1 / ( 1 + 1 / (…. 1 + 1 / 1 + 1))) có n dấu phân số");
 
             // Input
             int n = Function.int_in("Nhap so nguyen n:");
 
-            // Tao bien
-            double S = 0;
+            // Variable
+            double S = 1;
 
             // Loop
             for (int i = 1; i <= n; i++)
             {
                 double temp = S;
-                S = Math.Pow(Function.Factorial(i) + temp, (float)1 / (i + 1));
+                S = 1 / (1 + temp);
             }
             Console.WriteLine($"S({n}) = {S}.");
         }

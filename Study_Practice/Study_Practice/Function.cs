@@ -28,18 +28,23 @@ namespace Study_Practice
             return uocSo;
         }
 
-        public static int int_in()
+        public static int int_in(string message) // Method nhan va check input
         {
-            Console.WriteLine("Nhap so n:");
-            int input = int.Parse(Console.ReadLine());
-            return input;
-        }
+            while (true)
+            {
+                Console.WriteLine(message);
+                string input = Console.ReadLine();
 
-        public static int int_in(string message)
-        {
-            Console.WriteLine(message);
-            int input = int.Parse(Console.ReadLine());
-            return input;
+                if (int.TryParse(input, out int number))
+                {
+                    if (number >= 0) return number;
+                    else Console.WriteLine("Invalid input");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input");
+                }
+            }
         }
     }
 }

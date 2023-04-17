@@ -13,8 +13,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 30: Cho số nguyên dương n. Kiểm tra xem n có phải là số hoàn thiện hay không");
 
             // Tao input
-            Console.WriteLine("Nhap so nguyen duong n:");
-            int n = int.Parse(Console.ReadLine());
+            int n = Function.int_in("Nhap so nguyen n:");
 
             // List uoc so
             List<int> uocSo = Function.listUocSo(n);
