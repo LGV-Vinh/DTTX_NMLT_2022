@@ -12,7 +12,7 @@ namespace Study_Practice
 
 
             // Tao input
-            int n = Function.int_in("Nhap so nguyen n:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // Tao bien
             double S = 0;

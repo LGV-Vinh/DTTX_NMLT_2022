@@ -11,7 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 44: Hãy tính tổng các chữ số của số nguyên dương n");
 
             // Input
-            int n_in = Function.int_in("Nhap so nguyen duong n:");
+            int n_in = Function.Int_In("Nhap so nguyen duong n:");
 
             // Variable
             int digit = 0;

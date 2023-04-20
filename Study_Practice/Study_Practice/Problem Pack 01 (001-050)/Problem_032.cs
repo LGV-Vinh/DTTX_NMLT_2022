@@ -11,7 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 32: Cho số nguyên dương n. Kiểm tra xem n có phải là số chính phương hay không");
 
             // Tao input
-            int n = Function.int_in("Nhap so nguyen n:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // Tim so sqrt
             double sqrt = Math.Sqrt(n);

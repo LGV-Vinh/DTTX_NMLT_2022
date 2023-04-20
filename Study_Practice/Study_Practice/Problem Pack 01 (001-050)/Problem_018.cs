@@ -11,8 +11,8 @@ namespace Study_Practice
             Console.WriteLine("Bài 18: Tính S(n) = 1 + x^2/2! + x^4/4! + … + x^2n/(2n)!");
 
             // Tao input
-            int x = Function.int_in("Nhap so nguyen x:");
-            int n = Function.int_in("Nhap so nguyen n:");
+            int x = Function.Int_In("Nhap so nguyen x:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // Tao bien
             double S = 1;

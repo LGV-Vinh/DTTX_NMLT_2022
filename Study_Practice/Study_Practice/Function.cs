@@ -15,7 +15,7 @@ namespace Study_Practice
             return result;
         }
 
-        public static List<int> listUocSo(int n) // Tra ve list uoc so cua so n duoc nhap
+        public static List<int> ListUocSo(int n) // Tra ve list uoc so cua so n duoc nhap
         {
             List<int> uocSo = new List<int>();
             for (int i = 1; i <= n; i++)
@@ -28,7 +28,7 @@ namespace Study_Practice
             return uocSo;
         }
 
-        public static int int_in(string message) // Method nhan va check input
+        public static int Int_In(string message) // Method nhan va check input
         {
             while (true)
             {
@@ -45,6 +45,17 @@ namespace Study_Practice
                     Console.WriteLine("Invalid input");
                 }
             }
+        }
+
+        public static int UocSoChungLonNhat(int a, int b)
+        {
+            if (b == 0) return a;
+            return UocSoChungLonNhat(b, a % b);
+        }
+
+        public static int BoiSoChungNhoNhat(int a, int b)
+        {
+            return (a * b) / UocSoChungLonNhat(a, b);
         }
     }
 }

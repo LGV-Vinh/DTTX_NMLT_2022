@@ -12,7 +12,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 20: Liệt kê tất cả các “ước số” của số nguyên dương n");
 
             // Tao input
-            int n = Function.int_in("Nhap so nguyen n:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // Tao list
             List<int> uocSo = new List<int>();

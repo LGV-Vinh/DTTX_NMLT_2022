@@ -11,7 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 8: Tính S(n) = ½ + ¾ + 5/6 + … + 2n + 1/ 2n + 2");
 
             // Tao input
-            int n = Function.int_in("Nhap so nguyen n:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // Tao bien
             double S = 0;

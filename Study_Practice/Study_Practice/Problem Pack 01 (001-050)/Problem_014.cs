@@ -11,8 +11,8 @@ namespace Study_Practice
             Console.WriteLine("Bài 14: Tính S(n) = x + x^3 + x^5 + … + x^2n + 1");
 
             // Tao input
-            int x = Function.int_in("Nhap so nguyen x:");
-            int n = Function.int_in("Nhap so nguyen n:");
+            int x = Function.Int_In("Nhap so nguyen x:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // Tao bien
             double S, step;

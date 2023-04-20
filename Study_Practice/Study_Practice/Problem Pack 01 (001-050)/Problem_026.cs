@@ -13,10 +13,10 @@ namespace Study_Practice
             Console.WriteLine("Bài 26: Tính tích tất cả các “ước số lẻ” của số nguyên dương n");
 
             // Tao input
-            int n = Function.int_in("Nhap so nguyen n:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // List uoc so
-            List<int> uocSo = Function.listUocSo(n);
+            List<int> uocSo = Function.ListUocSo(n);
 
             // List uoc so le
             Console.WriteLine($"Bai 026: Cac uoc so le cua {n} la:");

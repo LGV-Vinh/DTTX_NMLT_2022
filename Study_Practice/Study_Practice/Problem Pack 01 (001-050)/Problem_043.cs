@@ -11,7 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 43: Hãy đếm số lượng chữ số của số nguyên dương n");
 
             // Input
-            int n = Function.int_in("Nhap so nguyen duong n");
+            int n = Function.Int_In("Nhap so nguyen duong n");
 
             // Convert to string and get length
             int length = n.ToString().Length;

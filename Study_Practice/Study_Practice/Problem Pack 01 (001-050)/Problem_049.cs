@@ -11,7 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 49: Cho số nguyên dương n. Hãy tìm chữ số đầu tiên của n");
 
             // Input
-            int n_in = Function.int_in("Nhap so nguyen duong n:");
+            int n_in = Function.Int_In("Nhap so nguyen duong n:");
 
             // Variable
             int n = n_in;

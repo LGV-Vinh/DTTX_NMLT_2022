@@ -11,8 +11,8 @@ namespace Study_Practice
             Console.WriteLine("Bài 10: Tính T(x, n) = x^n");
 
             // Tao input
-            int x = Function.int_in("Nhap so nguyen x:");
-            int n = Function.int_in("Nhap so nguyen n:");
+            int x = Function.Int_In("Nhap so nguyen x:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // Giai
             double T = Math.Pow(x, n);

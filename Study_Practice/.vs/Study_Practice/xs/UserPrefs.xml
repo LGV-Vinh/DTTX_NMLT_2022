@@ -1,19 +1,51 @@
 ﻿<Properties StartupConfiguration="{856ABEA6-FF48-4B79-B2AC-015B6494D48E}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Study__Practice PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Study_Practice/Problem Pack 02 (051-100)/Problem_064.cs">
+    <Files>
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_048.cs" />
+      <File FileName="Study_Practice/Main.cs" Line="8" Column="46" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_049.cs" />
+      <File FileName="Study_Practice/Problem_000.cs" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_050.cs" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_043.cs" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_044.cs" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_045.cs" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_046.cs" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_047.cs" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_042.cs" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_041.cs" />
+      <File FileName="Study_Practice/Problem Pack 03 (101-113)/Problem_111.cs" />
+      <File FileName="Study_Practice/Function.cs" Line="53" Column="48" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_012.cs" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problm_051.cs" Line="25" Column="88" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_051 (copy).cs" Line="41" Column="109" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_053.cs" Line="21" Column="1" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_053 (copy).cs" Line="38" Column="29" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_055.cs" Line="20" Column="26" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_055.cs" Line="11" Column="48" />
+      <File FileName="Study_Practice/Problem Pack 01 (001-050)/Problem_035.cs" Line="1" Column="1" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_056 (copy).cs" Line="41" Column="82" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_058.cs" Line="25" Column="24" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_058.cs" Line="12" Column="10" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_060.cs" Line="43" Column="10" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_061.cs" Line="41" Column="111" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_062.cs" Line="17" Column="59" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_063.cs" Line="18" Column="85" />
+      <File FileName="Study_Practice/Problem Pack 02 (051-100)/Problem_064.cs" Line="19" Column="37" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Study_Practice" expanded="True">
             <Node name="Study_Practice" expanded="True">
-              <Node name="Main" expanded="True" />
-              <Node name="Problem Pack 01 (001-050)" expanded="True">
-                <Node name="Problem_041.cs" selected="True" />
+              <Node name="Problem Pack 02 (051-100)" expanded="True">
+                <Node name="Problem_064.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,5 +53,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

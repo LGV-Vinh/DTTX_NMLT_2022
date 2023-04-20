@@ -11,7 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 41: Tính S(n) = 1 / (1 + 1 / ( 1 + 1 / (…. 1 + 1 / 1 + 1))) có n dấu phân số");
 
             // Input
-            int n = Function.int_in("Nhap so nguyen n:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // Variable
             double S = 1;

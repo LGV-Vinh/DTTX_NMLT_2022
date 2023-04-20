@@ -13,10 +13,10 @@ namespace Study_Practice
             Console.WriteLine("Bài 30: Cho số nguyên dương n. Kiểm tra xem n có phải là số hoàn thiện hay không");
 
             // Tao input
-            int n = Function.int_in("Nhap so nguyen n:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // List uoc so
-            List<int> uocSo = Function.listUocSo(n);
+            List<int> uocSo = Function.ListUocSo(n);
 
             // Kiem tra so hoan thien
             int sum = uocSo.Sum() - n;

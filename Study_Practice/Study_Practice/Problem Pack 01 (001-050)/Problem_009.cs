@@ -11,7 +11,7 @@ namespace Study_Practice
             Console.WriteLine("Bài 9: Tính T(n) = 1 x 2 x 3…x N");
 
             // Tao input
-            int n = Function.int_in("Nhap so nguyen n:");
+            int n = Function.Int_In("Nhap so nguyen n:");
 
             // Tao bien
             int T = 1;
