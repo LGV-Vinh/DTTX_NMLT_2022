@@ -18,7 +18,7 @@ namespace Study_Practice
             int step = 0;
             double sum = 0;
 
-            // Loop
+            // Loop for sign and term
             for (int i = 1; i <= n; i++)
             {
                 step += i;
