@@ -11,8 +11,4 @@
     <None Remove="Problem Pack 02 %28051-100%29\" />
     <None Remove="Problem Pack 03 %28101-113%29\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Problem Pack 02 %28051-100%29\" />
-    <Folder Include="Problem Pack 03 %28101-113%29\" />
-  </ItemGroup>
 </Project>

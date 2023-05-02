@@ -57,6 +57,88 @@ namespace Study_Practice
         {
             return (a * b) / UocSoChungLonNhat(a, b);
         }
+
+        public static int TongGiaTriLeNhoHonN(int n)
+        {
+            int tong = 0;
+            for (int i = 1; i < n; i += 2)
+            {
+                tong += i;
+            }
+            return tong;
+        }
+
+        public static void InCacSoNguyenLeNhoHonN(int n)
+        {
+            for (int i = 1; i < n; i += 2)
+            {
+                Console.Write($"{i} ");
+            }
+        }
+
+        public static int USLN(int a, int b)
+        {
+            if (b == 0) return a;
+            return USLN(b, a % b);
+        }
+
+        public static int BSNN(int a, int b)
+        {
+            return (a * b) / USLN(a, b);
+        }
+
+        public static bool KiemTraSoNguyenTo(int n)
+        {
+            if ( n <= 1 )
+            {
+                return false;
+            }
+
+            for (int i = 2; i <= n / 2; i++)
+            {
+                if (n % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static double GiaTriTuyetDoi(double n)
+        {
+            if (n < 0)
+            {
+                n = Math.Abs(n);
+                return n;
+            }
+            return n;
+        }
+
+        public static bool NamNhuan(int n)
+        {
+            if (n % 400 == 0 || (n % 100 != 0 && n % 4 == 0))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static void DoiTien(int n)
+        {
+            for (int x = 0; x <= n / 1000; x++)
+            {
+                for (int y = 0; y <= n / 2000; y++)
+                {
+                    for (int z = 0; z <= n / 5000; z++)
+                    {
+                        if (1000*x + 2000*y + 5000*z == n)
+                        {
+                        Console.WriteLine($"{x} to 1000, {y} to 2000, {z} to 5000");
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

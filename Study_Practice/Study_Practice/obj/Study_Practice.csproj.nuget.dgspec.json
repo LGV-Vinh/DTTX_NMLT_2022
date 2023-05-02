@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vinh/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/Study_Practice.csproj": {}
+    "E:\\Projects\\Study\\Study_Practice\\Study_Practice\\Study_Practice.csproj": {}
   },
   "projects": {
-    "/Users/vinh/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/Study_Practice.csproj": {
+    "E:\\Projects\\Study\\Study_Practice\\Study_Practice\\Study_Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vinh/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/Study_Practice.csproj",
+        "projectUniqueName": "E:\\Projects\\Study\\Study_Practice\\Study_Practice\\Study_Practice.csproj",
         "projectName": "Study_Practice",
-        "projectPath": "/Users/vinh/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/Study_Practice.csproj",
-        "packagesPath": "/Users/vinh/.nuget/packages/",
-        "outputPath": "/Users/vinh/Projects/DTTX_NMLT_2022/Study_Practice/Study_Practice/obj/",
+        "projectPath": "E:\\Projects\\Study\\Study_Practice\\Study_Practice\\Study_Practice.csproj",
+        "packagesPath": "C:\\Users\\nsbs\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\Study\\Study_Practice\\Study_Practice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/vinh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\nsbs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
