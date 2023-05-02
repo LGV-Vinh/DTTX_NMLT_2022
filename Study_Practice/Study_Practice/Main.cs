@@ -5,7 +5,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Problem_000 Problem = new Problem_111();
+        Console.OutputEncoding = System.Text.Encoding.Unicode;
+        Problem_000 Problem = new Problem_127();
         Problem.Solution();
     }
 }

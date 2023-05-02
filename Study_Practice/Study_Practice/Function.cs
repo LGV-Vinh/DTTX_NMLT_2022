@@ -139,6 +139,131 @@ namespace Study_Practice
                 }
             }
         }
+
+        public static int[] NhapMang()
+        {
+            int[] a;
+            Console.WriteLine("Nhap so luong phan tu cua mang:");
+            int n = int.Parse(Console.ReadLine());
+            a = new int[n];
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine($"Nhap gia tri phan tu a[{i}]");
+                a[i] = int.Parse(Console.ReadLine());
+            }
+            return a;
+        }
+
+        public static double[] NhapMangSoThuc()
+        {
+            double[] a;
+            Console.WriteLine("Nhap so luong phan tu cua mang:");
+            int n = int.Parse(Console.ReadLine());
+            a = new double[n];
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine($"Nhap gia tri phan tu a[{i}]");
+                a[i] = double.Parse(Console.ReadLine());
+            }
+            return a;
+        }
+
+        public static void XuatMang(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write($"{a[i]} ");
+            }
+        }
+
+        public static void XuatMangSoThuc(double[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write($"{a[i]} ");
+            }
+        }
+
+        public static int ChiSoThucLonNhat(double[] a)
+        {
+            int maxIndex = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] > a[maxIndex])
+                {
+                    maxIndex = i;
+                }
+            }
+            return maxIndex;
+        }
+
+        public static int ChiSoNguyenNhoNhat(int[] a)
+        {
+            int minIndex = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] < a[minIndex])
+                {
+                    minIndex = i;
+                }
+            }
+            return minIndex;
+        }
+
+        public static bool GiaTriChanNhoHon2004(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 0 && a[i] < 2004)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static int DemSoNguyenToNhoHon100(int[] a)
+        {
+            int count = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (KiemTraSoNguyenTo(a[i]) && a[i] < 100)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static double TongGiaTriAmTrongMangSoThuc(double[] a)
+        {
+            double sum = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] < 0)
+                {
+                    sum += a[i];
+                }
+            }
+            return sum;
+        }
+
+        public static double[] SapXepMangSoThuc(double[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                for (int j = i + 1; j < a.Length; j++)
+                {
+                    if (a[i] > a[j])
+                    {
+                        double temp = a[i];
+                        a[i] = a[j];
+                        a[j] = temp;
+                    }
+                }
+            }
+            return a;
+        }
     }
 }
 
