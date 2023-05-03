@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Net.NetworkInformation;
+
 namespace Study_Practice
 {
     public static class Function
@@ -210,6 +213,19 @@ namespace Study_Practice
             return minIndex;
         }
 
+        public static int ChiSoThucNhoNhat(double[] a)
+        {
+            int minIndex = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] < a[minIndex])
+                {
+                    minIndex = i;
+                }
+            }
+            return minIndex;
+        }
+
         public static bool GiaTriChanNhoHon2004(int[] a)
         {
             for (int i = 0; i < a.Length; i++)
@@ -248,6 +264,15 @@ namespace Study_Practice
             return sum;
         }
 
+        public static int ChiSoAmDauTien(double[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+
+            }
+        }
+
         public static double[] SapXepMangSoThuc(double[] a)
         {
             for (int i = 0; i < a.Length; i++)
@@ -263,6 +288,212 @@ namespace Study_Practice
                 }
             }
             return a;
+        }
+
+        public static void LietKeGiaTriChanTrongMang(int[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 0)
+                {
+                    index = i;
+                    Console.Write($"{a[i]} ");
+                }
+            }
+            
+            if (index < 0)
+            {
+                Console.WriteLine("Khong ton tai gia tri chan");
+            }
+        }
+
+        public static void LietKeChiSoAmTrongMangSoThuc(double[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] < 0)
+                {
+                    index = i;
+                    Console.Write($"{i} ");
+                }
+            }
+
+            if (index < 0)
+            {
+                Console.WriteLine("Khong ton tai gia tri am");
+            }
+        }
+
+        public static int ChiSoDuongDauTienTrongMangSoThuc(double[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] > 0)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
+        }
+
+        public static int ChiSoChanCuoiCungTrongMang(int[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 0)
+                {
+                    index = i;
+                }
+            }
+            return index;
+        }
+
+        public static int SoChanDauTienMang(int[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 0)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
+        }
+
+        public static int ChiSoGiaTriNhoNhatMangSoThuc(double[] a)
+        {
+            int index = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] < a[index])
+                {
+                    index = i;
+                }
+            }
+            return index;
+        }
+
+        public static int ChiSoGiaTriChanDauTienMang(int[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 0)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
+        }
+
+        public static bool KiemTraSoHoanThien(int n)
+        {
+            int sum = 0;
+            for (int i = 1; i < n; i++)
+            {
+                if (n % i == 0)
+                {
+                    sum += i;
+                }
+            }
+            if (sum == n)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static int ChiSoSoHoanThienCuoiMang(int[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (Function.KiemTraSoHoanThien(a[i]))
+                {
+                    index = i;
+                }
+            }
+            return index;
+        }
+
+        public static double GiaTriDuongNhoNhatMangSoThuc(double[] a)
+        {
+            double index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] > 0)
+                {
+                    index = a[i];
+                    break;
+                }
+            }
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] > 0 && a[i] < index)
+                {
+                    index = a[i];
+                }
+            }
+            return index;
+        }
+
+        public static int ChiSoDuongNhoNhatMangSoThuc(double[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] > 0)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            for (int i = index + 1; i < a.Length; i++)
+            {
+                if (a[i] > 0 && a[i] < a[index])
+                {
+                    index = i;
+                }
+            }
+            return index;
+        }
+
+        public static int SoNguyenToDauTien(int[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (KiemTraSoNguyenTo(a[i]))
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
+        }
+
+        public static int SoHoanThienDauTienMang(int[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (KiemTraSoHoanThien(a[i]))
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
         }
     }
 }
