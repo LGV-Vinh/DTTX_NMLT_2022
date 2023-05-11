@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Transactions;
@@ -1041,6 +1042,62 @@ namespace Study_Practice
         public static int BSCNN(int a, int b)
         {
             return (a * b) / USCLN(a, b);
+        }
+
+        public static int SoXuatHienItNhat(int[] a)
+        {
+            int prevCount = int.MaxValue;
+            int count = 0;
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                for (int j = 0; j < a.Length; j++)
+                {
+                    if (a[j] == a[i])
+                    {
+                        count++;
+                    }
+                }
+                if (count < prevCount)
+                {
+                    prevCount = count;
+                    index = i;
+                }
+                count = 0;
+            }
+            return index;
+        }
+
+        public static int ChuSoXuatHienItNhat(int[] a)
+        {
+            // Tao mang 10 de chua tung chu so tu 0 den 9
+            int[] chuSo = new int[10];
+
+            // Dem tung chu so roi + vao trong mang vua tao
+            foreach (int number in a)
+            {
+                int absNumber = Math.Abs(number); // Lay gia tri tuyet doi de phong truong hop so am
+                do
+                {
+                    int digit = absNumber % 10;
+                    chuSo[digit]++;
+                    absNumber /= 10;
+                }
+                while (absNumber > 0);
+            }
+
+            // Tao gia tri count MaxValue roi loop qua tung gia tri trong chuoi de tim so nho nhat
+            int minCount = int.MaxValue;
+            int minDigit = -1;
+            for (int i = 0; i < chuSo.Length; i++)
+            {
+                if (chuSo[i] < minCount)
+                {
+                    minCount = chuSo[i];
+                    minDigit = i;
+                }
+            }
+            return minDigit;
         }
     }
 }

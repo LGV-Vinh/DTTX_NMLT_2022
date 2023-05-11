@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         Console.OutputEncoding = System.Text.Encoding.Unicode;
-        Problem_000 Problem = new Problem_172();
+        Problem_000 Problem = new Problem_173();
         Problem.Solution();
     }
 }
