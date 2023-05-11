@@ -13,7 +13,19 @@ namespace Study_Practice
             Console.WriteLine("Bài 146: Tìm giá trị âm đầu tiên trong mảng 1 chiều các số thực. Nếu mảng không có giá trị âm thì trả về -1");
 
             double[] a = Function.NhapMangSoThuc();
-            Function.XuatMangSoThuc(a);
+            Function.XuatMang(a);
+            Console.WriteLine();
+            int chiSo = Function.ChiSoAmDauTien(a);
+            double kq;
+            if (chiSo > -1)
+            {
+                kq = a[chiSo];
+            }
+            else
+            {
+                kq = chiSo;
+            }
+            Console.WriteLine(kq);
         }
     }
 }
