@@ -793,15 +793,6 @@ namespace Study_Practice
                     break;
                 }
             }
-
-            // So sanh voi cac so phia sau
-            for (int j = index + 1; j < a.Length; j++)
-            {
-                if (a[j] >= x && a[j] <= y && a[j] < a[index])
-                {
-                    index = j;
-                }
-            }
             return index;
         }
 
@@ -871,6 +862,7 @@ namespace Study_Practice
         public static bool KiemTraToanChuSoLe(int n)
         {
             int digit = 0;
+            if (n == 0) return false;
             while (n != 0)
             {
                 digit = n % 10;
@@ -1004,7 +996,6 @@ namespace Study_Practice
         public static int SoNguyenToNhoNhatLonHonMoiGiaTriMang(int[] a)
         {
             int max = a[ChiSoLonNhatMang(a)];
-            int soNguyenToNhoNhat;
             int i = max + 1;
             while (KiemTraSoNguyenTo(i) == false)
             {
@@ -1077,7 +1068,7 @@ namespace Study_Practice
             foreach (int number in a)
             {
                 int absNumber = Math.Abs(number); // Lay gia tri tuyet doi de phong truong hop so am
-                do
+                do // Dung do/while de chuong trinh van chay trong truong hop so 0
                 {
                     int digit = absNumber % 10;
                     chuSo[digit]++;
@@ -1098,6 +1089,216 @@ namespace Study_Practice
                 }
             }
             return minDigit;
+        }
+
+        public static void TimCapSo(double[] arr)
+        {
+            for (int i = 0; i < arr.Length -1; i++)
+            {
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    double a = arr[i];
+                    double b = arr[j];
+
+                    if (a < b)
+                    {
+                        Console.WriteLine($"({a}, {b})");
+                    }
+                }
+            }
+        }
+
+        public static void haiSoGanNhat(double[] arr)
+        {
+            // Gia su 2 so dau tien phu hop
+            double minKhoangCach = Math.Abs(arr[0] - arr[1]);
+            double a = arr[0];
+            double b = arr[1];
+
+            for (int i = 1; i < arr.Length -1; i++)
+            {
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    double khoangCach = Math.Abs(arr[i] - arr[j]);
+                    if (arr[i] != arr[j] && khoangCach <= minKhoangCach)
+                    {
+                        minKhoangCach = khoangCach;
+                        a = arr[i];
+                        b = arr[j];
+                    }
+                }
+            }
+            Console.WriteLine($"({a}, {b})");
+        }
+
+        public static void LietKeSoAm(double[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] < 0)
+                {
+                    Console.WriteLine(a[i]);
+                }
+            }
+        }
+
+        public static void LietKeGiaTriTrongDoanXY(double[] a, double x, double y)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] >= x && a[i] <= y)
+                {
+                    Console.WriteLine(a[i]);
+                }
+            }
+        }
+
+        public static void LietKeGiaTriChanTrongDoanXY(int[] a, int x, int y)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 0 && a[i] >= x && a[i] <= y)
+                {
+                    Console.WriteLine(a[i]);
+                }
+            }
+        }
+
+        public static void LietKeGiaTriLonHonSoNgaySau(int[] a)
+        {
+            for (int i = 0; i < a.Length - 1; i++)
+            {
+                if (a[i] > Math.Abs(a[i + 1]))
+                {
+                    Console.WriteLine(a[i]);
+                }
+            }
+        }
+
+        public static void Bai180(int[] a)
+        {
+            for (int i = 1; i < a.Length - 1; i++)
+            {
+                if (a[i] < Math.Abs(a[i+1]) && a[i] > Math.Abs(a[i - 1]))
+                {
+                    Console.WriteLine(a[i]);
+                }
+            }
+        }
+
+        public static void Bai181(int[] a)
+        {
+            List<int> index = new List<int>();
+            for (int i = 0; i < a.Length - 1; i++)
+            {
+                if (a[i] % 2 == 0 && a[i + 1] % 2 == 0)
+                {
+                    index.Add(i);
+                    index.Add(i + 1);
+                }
+            }
+            index = new HashSet<int>(index).ToList();
+            foreach (int id in index)
+            {
+                Console.WriteLine(a[id]);
+            }
+        }
+
+        public static void LietKeGiaTriTraiDau(double[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (i == 0)
+                {
+                    if (a[i] * a[i + 1] < 0)
+                    {
+                        Console.WriteLine(a[i]);
+                    }
+                }
+                else if (i == a.Length - 1)
+                {
+                    if (a[i] * a[i - 1] < 0)
+                    {
+                        Console.WriteLine(a[i]);
+                    }
+                }
+                else
+                {
+                    if (a[i] * a[i - 1] < 0 || a[i] * a[i + 1] < 0)
+                    {
+                        Console.WriteLine(a[i]);
+                    }
+                }
+            }
+        }
+
+        public static void LietKeViTriGiaTriLonNhat(double[] a)
+        {
+            double max = double.MinValue;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] > max)
+                {
+                    max = a[i];
+                }
+            }
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] == max)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+
+        public static void LietKeViTriSoNguyenTo(int[] a)
+        {
+            int index = -1; // Gia su khong ton tai so nguyen to
+            // Xuat ra vi tri so nguyen to trong mang
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (KiemTraSoNguyenTo(a[i]))
+                {
+                    index = i;
+                    Console.WriteLine(i);
+                }
+            }
+            if (index < 0)
+            {
+                Console.WriteLine("Khong ton tai so nguyen to");
+            }
+        }
+
+        public static void LietKeViTriSoChinhPhuong(int[] a)
+        {
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (KiemTraSoChinhPhuong(a[i]))
+                {
+                    index = i;
+                    Console.WriteLine(i);
+                }
+            }
+            if (index < 0)
+            {
+                Console.WriteLine("Khong ton tai so chinh phuong");
+            }
+        }
+
+        public static void DichTraiXoayVong(int[] a, int k)
+        {
+            while (k > 0)
+            {
+                int temp = a[0];
+                for (int i = 1; i < a.Length; i++)
+                {
+                    a[i - 1] = a[i];
+                }
+                a[a.Length - 1] = temp;
+                k--;
+            }
         }
     }
 }
