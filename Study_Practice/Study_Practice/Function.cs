@@ -1300,6 +1300,134 @@ namespace Study_Practice
                 k--;
             }
         }
+
+        public static void Bai186(double[] a)
+        {
+            int index = -1; // Gia su khong ton tai so am
+
+            // Tim so am dau tien
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] < 0)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index > -1)
+            {
+                for (int i = index; i < a.Length; i++)
+                {
+                    if (a[i] == a[index])
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Khong ton tai so am.");
+            }
+        }
+
+        public static void Bai187(double[] a)
+        {
+            double min = double.MaxValue;
+            int index = -1;
+            // Tim gia tri duong nho nhat
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] > 0 && a[i] < min)
+                {
+                    index = i;
+                    min = a[i];
+                }
+            }
+
+            if (index > -1)
+            {
+                for (int i = 0; i < a.Length; i++)
+                {
+                    if (a[i] == min)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Khong ton tai so duong");
+            }
+        }
+
+        public static void Bai188(int[] a)
+        {
+            // Bài 188: Hãy liệt kê các vị trí chẵn lớn nhất trong mảng 1 chiều các số nguyên
+            int max = int.MinValue;
+            int index = -1;
+            
+            // Tim gia tri chan lon nhat
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 0 && a[i] > max)
+                {
+                    index = i;
+                    max = a[i];
+                }
+            }
+
+            if (index > -1)
+            {
+                for (int i = 0; i < a.Length; i++)
+                {
+                    if (a[i] == max)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Khong ton tai so chan");
+            }
+        }
+
+        public static void Bai189(int[] a)
+        {
+            // Bài 189: Hãy liệt kê các giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là chữ số lẻ
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (ChuSoDauTien(a[i]) % 2 != 0)
+                {
+                    index = i;
+                    Console.WriteLine(i);
+                }
+            }
+            if (index == -1)
+            {
+                Console.WriteLine("Khong ton tai so phu hop");
+            }
+        }
+
+        public static void Bai190(int[] a)
+        {
+            // Bài 190: Hãy liệt kê các giá trị có toàn chữ số lẻ trong mảng 1 chiều các số nguyên
+            int index = -1;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (KiemTraToanChuSoLe(a[i]))
+                {
+                    index = 1;
+                    Console.WriteLine(i);
+                }
+            }
+            if (index == -1)
+            {
+                Console.WriteLine("Khong ton tai so phu hop");
+            }
+        }
     }
 }
 
