@@ -1142,6 +1142,17 @@ namespace Study_Practice
             }
         }
 
+        public static void LietKeSoAm(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] < 0)
+                {
+                    Console.WriteLine(a[i]);
+                }
+            }
+        }
+
         public static void LietKeGiaTriTrongDoanXY(double[] a, double x, double y)
         {
             for (int i = 0; i < a.Length; i++)
@@ -1402,7 +1413,7 @@ namespace Study_Practice
                 if (ChuSoDauTien(a[i]) % 2 != 0)
                 {
                     index = i;
-                    Console.WriteLine(i);
+                    Console.WriteLine(a[i]);
                 }
             }
             if (index == -1)
@@ -1427,6 +1438,221 @@ namespace Study_Practice
             {
                 Console.WriteLine("Khong ton tai so phu hop");
             }
+        }
+
+        public static void LietKeSoCucDai(double[] a)
+        {
+            int flag = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (i == 0)
+                {
+                    if (a[i] > a[i + 1])
+                    {
+                        flag = 1;
+                        Console.WriteLine(a[i]);
+                    }
+                }
+                else if (i == a.Length - 1)
+                {
+                    if (a[i] > a[i - 1])
+                    {
+                        flag = 1;
+                        Console.WriteLine(a[i]);
+                    }
+                }
+                else
+                {
+                    if (a[i] > a[i - 1] && a[i] > a[i + 1])
+                    {
+                        flag = 1;
+                        Console.WriteLine(a[i]);
+                    }
+                }
+            }
+            if (flag == 0)
+            {
+                Console.WriteLine("Khong ton tai gia tri phu hop");
+            }
+        }
+
+        public static void Bai192(int[] a)
+        {
+            // Bài 192: Hãy liệt kê các  giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là số chẵn
+            int flag = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (ChuSoDauTien(a[i]) % 2 == 0)
+                {
+                    flag = 1;
+                    Console.WriteLine(a[i]);
+                }
+            }
+            if (flag == 0)
+            {
+                Console.WriteLine("Khong ton tai gia tri phu hop");
+            }
+        }
+
+        public static void Bai193(int[] a)
+        {
+            // Bài 193: Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị trong mảng có dạng 3^k. Nếu mảng không có giá trị đó thì trả về 0
+            int flag = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (KiemTraSoDangNMuK(a[i], 3))
+                {
+                    flag = 1;
+                    Console.WriteLine(a[i]);
+                }
+            }
+            if (flag == 0)
+            {
+                Console.WriteLine(0);
+            }
+        }
+
+        public static void Bai194(int[] a)
+        {
+            // Bài 194: Cho mảng 1 chiều các số nguyên có nhiều hơn 2 giá trị. Hãy viết hàm liệt kê các cặp giá trị gần nhau nhất
+            int minKhoangCach = int.MaxValue;
+            
+            // Loop tim khoang cach gan nhat
+            for (int i = 0; i < a.Length; i++)
+            {
+                for (int j = i + 1; j < a.Length; j++)
+                {
+                    if (Math.Abs(a[i] - a[j]) < minKhoangCach)
+                    {
+                        minKhoangCach = Math.Abs(a[i] - a[j]);
+                    }
+                }
+            }
+
+            // Loop xuat ra cac gia tri co khoang cach gan nhat
+            for (int i = 0; i < a.Length; i++)
+            {
+                for (int j = i + 1; j < a.Length; j++)
+                {
+                    if (Math.Abs(a[i] - a[j]) == minKhoangCach)
+                    {
+                        Console.WriteLine($"({a[i]} , {a[j]})");
+                    }
+                }
+            }
+        }
+
+        public static int TongGiaTriTrongMang(int[] a)
+        {
+            int sum = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                sum += a[i];
+            }
+            return sum;
+        }
+
+        public static int[,] NhapMang2Chieu()
+        {
+            int[,] a;
+            int n, m;
+            Console.Write("Nhap so dong: ");
+            n = int.Parse(Console.ReadLine());
+            Console.Write("Nhap so cot: ");
+            m = int.Parse(Console.ReadLine());
+            a = new int[n, m];
+
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    Console.WriteLine($"Nhap gia tri a[{i}, {j}]");
+                    a[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+            return a;
+        }
+
+        public static void XuatMang2Chieu(int[,] a)
+        {
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    Console.Write($"{a[i, j]} ");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public static int TongMang2Chieu(int[,] a)
+        {
+            int sum = 0;
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    sum += a[i, j];
+                }
+            }
+            return sum;
+        }
+
+        public static int DemSoNguyenToMang2Chieu(int[,] a)
+        {
+            int count = 0;
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    if (KiemTraSoNguyenTo(a[i, j]))
+                    {
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+
+        public static int TongGiaTriBien(int[,] a)
+        {
+            int sum = 0;
+            for(int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    if (i == 0 || j == 0 || i == a.GetLength(0) - 1 || j == a.GetLength(1) - 1)
+                    {
+                        sum += a[i, j];
+                    }
+                }
+            }
+            return sum;
+        }
+
+        public static int TinhTongPhanTuBien(int[,] a)
+        {
+            int sum = 0;
+            // Duyet qua dong 0 va dong n - 1
+            for (int j = 0; j < a.GetLength(1); j++)
+            {
+                sum += a[0, j];
+                if (a.GetLength(0) >= 2)
+                {
+                    sum += a[a.GetLength(0) - 1, j];
+                }
+            }
+
+            // Duyet cot dau tien va cot m -1
+            for (int i = 1; i < a.GetLength(0) - 1; i++)
+            {
+                sum += a[i, 0];
+                if (a.GetLength(1) >= 2)
+                {
+                    sum += a[i, a.GetLength(1) - 1];
+                }
+            }
+            return sum;
         }
     }
 }
