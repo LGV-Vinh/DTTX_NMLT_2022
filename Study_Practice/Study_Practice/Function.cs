@@ -1654,6 +1654,182 @@ namespace Study_Practice
             }
             return sum;
         }
+
+        public static void SapXepMangTang(int[] a)
+        {
+            for (int i = 0; i < a.Length - 1; i++)
+            {
+                for (int j = i + 1; j < a.Length; j++)
+                {
+                    if (a[i] > a[j])
+                    {
+                        int temp = a[i];
+                        a[i] = a[j];
+                        a[j] = temp;
+                    }
+                }
+            }
+        }
+
+        public static void SapXepMang2Chieu(int[,] a)
+        {
+            // Chuyen doi thanh mang 1 chieu
+            int[] b = new int[a.GetLength(0) * a.GetLength(1)];
+            int iB = 0;
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    b[iB] = a[i, j];
+                    iB++;
+                }
+            }
+
+            // Sap xep mang 1 chieu
+            Function.SapXepMangTang(b);
+
+            // Chuyen doi ve mang 2 chieu
+            iB = 0;
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    a[i, j] = b[iB];
+                    iB++;
+                }
+            }
+        }
+
+        public static int DemPhanTuCucDai(int[,] a)
+        {
+            int dem = 0;
+            int[] dx = { -1, -1, -1, 0, 0, 1, 1, 1 };
+            int[] dy = { -1, 0, 1, -1, 1, -1, 0, 1 };
+
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    bool isValid = true;
+                    for (int k = 0; k < 8; k++)
+                    {
+                        if (i + dx[k] >= 0 && i + dx[k] < a.GetLength(0) &&
+                            j + dy[k] >= 0 && j + dy[k] < a.GetLength(1))
+                        {
+                            if (a[i, j] < a[i + dx[k], j + dy[k]])
+                            {
+                                isValid = false;
+                                break;
+                            }
+                        }
+                    }
+                    if (isValid) dem++;
+                }
+            }
+            return dem;
+        }
+
+        public static int DemPhanTuYenNgua(int[,] a)
+        {
+            int dem = 0;
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    // Kiem tra max tren dong
+                    bool isMaxRow = true;
+                    for (int k = 0; k < a.GetLength(1); k++)
+                    {
+                        if (a[i, j] < a[i, k])
+                        {
+                            isMaxRow = false;
+                            break;
+                        }
+                    }
+                    // Kiem tra min tren cot
+                    if (isMaxRow)
+                    {
+                        bool isMinCol = true;
+                        for (int k = 0; k < a.GetLength(0); k++)
+                        {
+                            if (a[i, j] > a[k, j])
+                            {
+                                isMinCol = false;
+                                break;
+                            }
+                        }
+                        if (isMinCol) dem++;
+                    }
+                }
+            }
+            return dem;
+        }
+
+        public static bool KiemTraMaTranATrongB(int[,] a, int[,] b)
+        {
+            for (int iB = 0; iB <= b.GetLength(0) - a.GetLength(0); iB++)
+            {
+                for (int jB = 0; jB <= b.GetLength(1) - a.GetLength(1); jB++)
+                {
+                    bool isValid = true;
+                    // Xet ma tran a tai vi tri iB va jB
+                    for (int iA = 0; iA < a.GetLength(0); iA++)
+                    {
+                        for (int jA = 0; jA < a.GetLength(1); jA++)
+                        {
+                            if (a[iA, jA] != b[iB + iA, jB + jA]) // iB + iA va jB + jA de offset no ve dung vi tri
+                            {
+                                isValid = false;
+                                break;
+                            }
+                        }
+                    }
+                    if (isValid) return true;
+                }
+            }
+            return false;
+        }
+
+        public static void MaTranConCoTongLonNhat(int[,] a, out int xMax, out int yMax, out int rMax, out int cMax)
+        {
+            // Gia su
+            xMax = 0;
+            yMax = 0;
+            rMax = 1;
+            cMax = 1;
+            int max = a[0, 0];
+
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    // Xet cac ma tran con bat dau tai vi tri i, j
+                    for (int r = 1; r <= a.GetLength(0) - i; r++)
+                    {
+                        for (int c = 1; c <= a.GetLength(1) - j; c++)
+                        {
+                            // Tinh tong cac phan tu ma tran con cua vi tri i, j; voi so dong r va cot c
+                            int sum = 0;
+                            for (int iCon = 0; iCon < r; iCon++)
+                            {
+                                for (int jCon = 0; jCon < c; jCon++)
+                                {
+                                    sum += a[i + iCon, j + jCon];
+                                }
+                            }
+                            if (sum > max)
+                            {
+                                max = sum;
+                                xMax = i;
+                                yMax = j;
+                                rMax = r;
+                                cMax = c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
